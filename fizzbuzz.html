@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+
+    <label for="buzz">Type a Number :</label>
+    <input  id="buzz">
+    <button>Click Here</button>
+    <hr>
+
+    <div id="result"></div>
+    <script>
+
+        //function add(){
+            //addEventListener
+            /*const btn = document.querySelector('button');
+            const ipt = document.getElementById('buzz').value;
+            const res = document.getElementById('result');
+            */
+            const btn = document.querySelector('button');
+            btn.addEventListener("click", () => {
+                const ipt = document.getElementById('buzz').value;
+                const res = document.getElementById('result');
+                
+                if(parseInt(ipt) !== NaN){
+                    console.log("err");
+                }else{
+                    alert("this number");
+                }
+                
+                
+            });
+            
+          /*if(){
+                const p = document.createElement('p');
+                p.innerHTML = "Invalid";
+                res.append(p).style.color = "red";
+          }else{
+            if(ipt % 3 === 0 && ipt % 5 === 0){
+                const p = document.createElement('p');
+                p.innerHTML = "FizzBuzz!";
+                res.append(p);
+            }else if(ipt % 5 === 0){
+                const p = document.createElement('p');
+                p.innerHTML = "Buzz!";
+                res.append(p);
+            }else if(ipt % 3 === 0){
+                const p = document.createElement('p');
+                p.innerHTML = "Fizz!";
+                res.append(p);
+            }else{
+                const p = document.createElement('p');
+                p.innerHTML = ipt;
+                res.append(p);
+            }
+            */
+        
+        
+        //}
+    </script>
+</body>
+</html>
