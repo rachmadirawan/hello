@@ -1,6 +1,6 @@
 //document.getElementById()
-const h1 = document.getElementById('header');
-h1.innerHTML = "Selamat Datang";
+//const h1 = document.getElementById('header');
+//h1.innerHTML = "Selamat Datang";
 
 //document.getElementsByTagName()
 /*const h2 = document.getElementsByTagName('h2')[0];
@@ -8,7 +8,7 @@ h2.style.backgroundColor = "gray";
 const h22 = document.getElementsByTagName('h2')[1];
 h22.innerHTML = "Java Script";
 */
-for(let i = 0;i < 2;i++){
+/*for(let i = 0;i < 2;i++){
     const h2 = document.getElementsByTagName('h2')[i];
     h2.style.backgroundColor = "gray";
     h2.innerHTML = "ini isinya sama";
@@ -34,7 +34,7 @@ obj.style.color = "red";
 }*/
 
 //create element
-const divDemo = document.getElementById('demo');
+/*const divDemo = document.getElementById('demo');
 const p = document.createElement('p');
 p.innerHTML = "Hello World";
 divDemo.append(p);
@@ -43,3 +43,20 @@ divDemo.append(p);
 const form = document.getElementById('name').value;
 console.log(form);
 
+*/
+
+
+
+const h1 = document.getElementById('header');
+console.log(h1);
+
+const h2 =  document.getElementsByTagName('h2');
+//method gelElemetsByTagName
+
+//const p = document.getElementsByTagName('p');
+
+//methot getElemetsByClassName
+const classPar = document.querySelectorAll('p.par');
+for (let i = 0 ; i < classPar.length; i++){
+    classPar[i].style.backgroundColor = "gray";
+}

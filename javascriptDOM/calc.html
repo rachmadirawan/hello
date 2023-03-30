@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper-calc{
+            width: 300px;
+            align-items: center;
+        }
+
+        .screen{
+            width: 100%;
+            height: 50px;
+            font-size: 30px;
+        }
+
+        .warraper-btn .row{
+            display: flex;
+            justify-content: space-evenly
+        }
+        .tombol, .add{
+            margin-top: 2px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper-calc">
+        <input type="text" class="screen" id="screenUpdate">
+        <div class="warraper-btn">
+            <div class="row">
+                <button class="tombol" value="9">9</button>
+                <button class="tombol" value="8">8</button>
+                <button class="tombol" value="7">7</button>
+                <button class="add">+</button>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+            const screen = document.getElementById('screenUpdate');
+            const btn = document.querySelector('.tombol');
+
+            screen.value = btn;
+    </script>
+</body>
+</html>
